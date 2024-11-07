@@ -188,42 +188,54 @@
 
 
 
-// // Slice array elements
-// // Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
+// Slice array elements
+// Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
 
 //   const numbers2 = [1,2,3,4,5]
 
 //   console.log(numbers2.slice()) // -> it copies all  item
 //   console.log(numbers2.slice(0)) // -> it copies all  item
-//   console.log(numbers2.slice(0, numbers.length)) // it copies all  item
+//   console.log(numbers2.slice(0, numbers2.length)) // it copies all  item
 //   console.log(numbers2.slice(1,4)) // -> [2,3,4] // it doesn't include the ending position
+//console.log(numbers2.slice(1, 3))  // ->[2,3]
 
-// // Splice method in array
-// // Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
+// Splice method in array
+
+// Splice: It takes three parameters:Starting position, number of items to be removed and number of items to be added.
 
 //   const numbers = [1, 2, 3, 4, 5]
 //   numbers.splice()
 //   console.log(numbers)                // -> remove all items
+
 //   const numbers = [1, 2, 3, 4, 5]
 // 	numbers.splice(0,1)
 //   console.log(numbers)            // remove the first item
+
 //   const numbers = [1, 2, 3, 4, 5, 6]
 // 	numbers.splice(3, 3, 7, 8, 9)
-//   console.log(numbers.splice(3, 3, 7, 8, 9))  // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
-// // Adding item to an array using push
-// // Push: adding item in the end. To add item to the end of an existing array we use the push method.
+//   console.log(numbers.splice(3, 3, 7, 8, 9))  // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items// 
+// const numbers5 = [7, 6, 5, 4, 3, 2, 1]
+//numbers5.splice(4,2, 9, 8) ->[]
 
-// // syntax
+ // Adding item to an array using push
+// Push: adding item in the end. To add item to the end of an existing array we use the push method.
+
+// syntax
 // const arr  = ['item1', 'item2','item3']
 // arr.push('new item')
+
 // console.log(arr)
-// // ['item1', 'item2','item3','new item']
+ // ['item1', 'item2','item3','new item']
+
 // const numbers = [1, 2, 3, 4, 5]
 // numbers.push(6)
 // console.log(numbers) // -> [1,2,3,4,5,6]
 
 // numbers.pop() // -> remove one item from the end
-// console.log(numbers) // -> [1,2,3,4,5]
+// const numbers = ]1, 2, 3, 4, 5]
+// console.log(numbers.pop)
+ // -> [1,2,3,4]
+
 // let fruits = ['banana', 'orange', 'mango', 'lemon']
 // fruits.push('apple')
 // console.log(fruits)    // ['banana', 'orange', 'mango', 'lemon', 'apple']
@@ -231,29 +243,29 @@
 // fruits.push('lime')
 // console.log(fruits)   // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 
-// // Removing the end element using pop
-// // pop: Removing item in the end.
+// Removing the end element using pop
+// pop: Removing item in the end.
 
 // const numbers = [1, 2, 3, 4, 5]
 // numbers.pop() // -> remove one item from the end
 // console.log(numbers) // -> [1,2,3,4]
 
-// // Removing an element from the beginning
-// // shift: Removing one array element in the beginning of the array.
+// Removing an element from the beginning
+// shift: Removing one array element in the beginning of the array.
 
 // const numbers3= [1, 2, 3, 4, 5]
 // numbers3.shift() // -> remove one item from the beginning
 // console.log(numbers3) // -> [2,3,4,5]
 
-// // Add an element from the beginning
-// // unshift: Adding array element in the beginning of the array.
+// Add an element from the beginning
+// unshift: Adding array element in the beginning of the array.
 
 // const numbers = [1, 2, 3, 4, 5]
 // numbers.unshift(0) // -> add one item from the beginning
 // console.log(numbers) // -> [0,1,2,3,4,5]
 
-// // Reversing array order
-// // reverse: reverse the order of an array.
+// Reversing array order
+// reverse: reverse the order of an array.
 
 // const numbers = [1, 2, 3, 4, 5]
 // numbers.reverse() // -> reverse array order
@@ -262,8 +274,8 @@
 // numbers.reverse()
 // console.log(numbers) // [1, 2, 3, 4, 5]
 
-// // Sorting elements in array
-// // sort: arrange array elements in ascending order. Sort takes a call back function, we will see how we use sort with a call back function in the coming sections.
+// Sorting elements in array
+// sort: arrange array elements in ascending order. Sort takes a call back function, we will see how we use sort with a call back function in the coming sections.
 
 // const webTechs = [
 //   'HTML',
@@ -281,14 +293,15 @@
 // webTechs.reverse() // after sorting we can reverse it
 // console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
 
-// // Array of arrays
-// // Array can store different data types including an array itself. Let us create an array of arrays
+// Array of arrays
+// Array can store different data types including an array itself. Let us create an array of arrays
 
 // const firstNums = [1, 2, 3]
 // const secondNums = [1, 4, 9]
 
-// const arrayOfArray =  [[1, 2, 3], [1, 2, 3]]
-// console.log(arrayOfArray[0]) // [1, 2, 3]
+// const arrayOfArray =  [[1, 2, 3], [1, 2, 3], [4,5,6]]
+// console.log(arrayOfArray[2]) // [4, 5 6]
+// console.log(arrayOfArray[1][1])
 
 //  const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 //  const backEnd = ['Node','Express', 'MongoDB']
@@ -298,5 +311,5 @@
 //  console.log(fullStack[0])  // ["HTML", "CSS", "JS", "React", "Redux"]
 //  console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
 
-// // 🌕 You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
+ // 🌕 You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps ahead on your way to greatness. Now do some exercises for your brain and for your muscle.
 
