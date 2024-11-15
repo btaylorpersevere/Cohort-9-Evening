@@ -7,3 +7,13 @@ const square = function(n) {
 }
 
 console.log(square(2)) // -> 4
+
+const generateFullName = function(firstName = 'Asabeneh', lastName = 'Yetayeh') {
+    let space = ' '
+    let fullName = firstName + space + lastName
+    return fullName
+  }
+  console.log(generateFullName())
+console.log(generateFullName('David', 'Smith'))
+
+

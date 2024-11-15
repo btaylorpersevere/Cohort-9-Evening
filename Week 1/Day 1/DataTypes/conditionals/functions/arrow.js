@@ -10,15 +10,15 @@ function square(n) {
 }
 
 console.log(square(2)) // 4
-
+//arrow function
 const square = n => {
   return n * n
 }
-
 console.log(square(2))  // -> 4
 
 // if we have only one line in the code block, it can be written as follows, explicit return
 const square = n => n * n  // -> 4
+
 const changeToUpperCase = arr => {
   const newArr = []
   for (const element of arr) {
@@ -26,7 +26,6 @@ const changeToUpperCase = arr => {
   }
   return newArr
 }
-
 const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
 console.log(changeToUpperCase(countries))
 
@@ -51,9 +50,9 @@ console.log(printFullName('Asabeneh', 'Yetayeh'))
 function functionName(param = value) {
   //codes
 }
-
 // Calling function
 functionName()
+
 functionName(arg)
 // Example:
 
