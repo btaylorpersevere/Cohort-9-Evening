@@ -1,5 +1,5 @@
-do while loop
-let i = 0
+//do while loop
+let i = 0 //i is initiliazed to 0 
 do {
   console.log(i)
   i++

@@ -1,5 +1,5 @@
 // for of loop
-// We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array.
+// We use for of loop for arrays. It is very hard way to iterate through an array if we are not interested in the index of each element in the array.
 
 for (const element of arr) {
   // code goes here

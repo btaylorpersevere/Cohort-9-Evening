@@ -1,4 +1,6 @@
-while loop
+//while loop
+//does not use the for statement
+
 let i = 0
 while (i <= 5) {
   console.log(i)

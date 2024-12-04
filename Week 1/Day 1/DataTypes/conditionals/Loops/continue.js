@@ -1,5 +1,5 @@
-continue
-We use the keyword continue to skip a certain iterations.
+// continue
+// We use the keyword continue to skip a certain iterations.
 
 for(let i = 0; i <= 5; i++){
   if(i == 3){
