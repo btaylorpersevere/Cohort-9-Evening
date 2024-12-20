@@ -187,13 +187,14 @@ class Person {
 // console.log(person1.skills)
 // console.log(person2.skills)
 // // 0
-// // 0
-// // []
-// // []
-// // A method could be regular method or a getter or a setter. Let us see, getter and setter.
+// 0
+// []
+// []
 
-// // getter
-// // The get method allow us to access value from the object. We write a get method using keyword get followed by a function. Instead of accessing properties directly from the object we use getter to get the value. See the example bellow
+// A method could be regular method or a getter or a setter. Let us see, getter and setter.
+
+// getter
+// The get method allow us to access value from the object. We write a get method using keyword get followed by a function. Instead of accessing properties directly from the object we use getter to get the value. See the example bellow
 
 // class Person {
 //   constructor(firstName, lastName, age, country, city) {
@@ -229,6 +230,7 @@ class Person {
 // 0
 // []
 // []
+
 // setter
 // The setter method allow us to modify the value of certain properties. We write a setter method using keyword set followed by a function. See the example bellow.
 
@@ -430,11 +432,12 @@ class Person {
 
 // Inheritance
 // Using inheritance we can access all the properties and the methods of the parent class. This reduces repetition of code. If you remember, we have a Person parent class and we will create children from it. Our children class could be student, teach etc.
+/ // syntax
 
-// // syntax
 // class ChildClassName extends {
-//  // code goes here
+ // code goes here
 // }
+
 // Let us create a Student child class from Person parent class.
 
 // class Student extends Person {
@@ -448,11 +451,15 @@ class Person {
 // console.log(s1.saySomething())
 // console.log(s1.getFullName())
 // console.log(s1.getPersonInfo())
+
 // Student {firstName: "Asabeneh", lastName: "Yetayeh", age: "Finland", country: 250, city: "Helsinki", …}
 // I am a child of the person class
+
 // Asabeneh Yetayeh
 // Student {firstName: "Asabeneh", lastName: "Yetayeh", age: "Finland", country: 250, city: "Helsinki", …}
 // Asabeneh Yetayeh is Finland. He lives Helsinki, 250.
+
+
 // Overriding methods
 // As you can see, we manage to access all the methods in the Person Class and we used it in the Student child class. We can customize the parent methods, we can add additional properties to a child class. If we want to customize, the methods and if we want to add extra properties, we need to use the constructor function the child class too. Inside the constructor function we call the super() function to access all the properties from the parent class. The Person class didn't have gender but now let us give gender property for the child class, Student. If the same method name used in the child class, the parent method will be overridden.
 
